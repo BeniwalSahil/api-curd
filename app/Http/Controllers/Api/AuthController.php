@@ -35,7 +35,7 @@ class AuthController extends Controller
 
         // Send OTP via Fast2SMS
         $response = Http::withHeaders([
-            'authorization' => env('FAST2SMS_API_KEY'),
+            'aut    horization' => env('FAST2SMS_API_KEY'),
             'accept' => 'application/json',
         ])->post('https://www.fast2sms.com/dev/bulkV2',[
             'route' => 'q',

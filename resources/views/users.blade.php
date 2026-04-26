@@ -11,7 +11,7 @@
 <body>
     <div class="namemain">
         <h2 class="heading">
-            
+
             @foreach ($users as $user)
                 {{ $user->name_first }}
             @endforeach
